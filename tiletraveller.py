@@ -34,13 +34,20 @@ i = 1
 j = 1
 
 location = (i, j)
+while i != 3 and j != 1:
 
-print("You can travel: north")
-direction = input("Direction: ")
-if direction == n:
-    j += 1
-else:
-    print("Not a valid direction!")
+    print("You can travel: (N)orth")
+    direction = input("Direction: ")
+    while direction == ("s", "e", "w"):
+        direction = input("Direction: ")
 
-direction = input("Direction: ")
+    if direction == "n":
+        j += 1
+    else:
+        print("Not a valid direction!")
 
+    elif i == 1 and j == 2:
+        print("You can travel: (N)orth or (E)ast or (S)outh. ")
+        direction = input("Direction: ")
+        while direction
+    
