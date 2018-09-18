@@ -3,4 +3,4 @@
 #3. Figure out how the player will move
 #4. code how the player and the grid will interact.
 #5. set boundaries as to where the player can and can not move
-#6.  
+#6. Make it so the player will be able to go back and forth 
