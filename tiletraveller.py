@@ -25,20 +25,22 @@
 #reytur 3,2 möguleikar n/N up, s/S down
 #reytur 3,3 möguleikar s/S down, w/W left
 
-player = 1,1
-print("You can travel: (N)orth.")
-direction = (input("Direction: "))
-if direction == "n":
-    player = 1,2
-    print("You can travel: (N)ort or (E)ast or (S)outh.")
-    direction = (input("Direction: "))
+north = "(N)orth"
+south = "(S)outh"
+east = "(E)ast"
+west = "(W)est"
+
+i = 1
+j = 1
+
+location = (i, j)
+
+print("You can travel: north")
+direction = input("Direction: ")
+if direction == n:
+    j += 1
 else:
-    player = 1,1
     print("Not a valid direction!")
-    direction = (input("Direction: "))
-    if direction == "n":
-        print("You can travel: (E)ast or (S)outh.")
-    elif direction == "e":
-        print("You can travel: (W)est or (S)outh.")
-    elif direction == "s":
-        print("You can travel: (N)orth.")
+
+direction = input("Direction: ")
+
